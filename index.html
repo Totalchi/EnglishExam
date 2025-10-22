@@ -11,6 +11,8 @@
   <!-- jsPDF + html2canvas for PDF export -->
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
+  <!-- AutoTable plugin for clean tables in the PDF -->
+  <script src="https://cdn.jsdelivr.net/npm/jspdf-autotable@3.8.4/dist/jspdf.plugin.autotable.min.js" defer></script>
 
   <script src="app.js" defer></script>
 </head>
@@ -63,6 +65,11 @@
       <div class="card">
         <h3>Precise Ripasso (Personalised Review)</h3>
         <div id="ripassoList"></div>
+      </div>
+
+      <div id="mistakesArea" class="card">
+        <h3>Mistake Log (with Correct Answers)</h3>
+        <div id="mistakesTable"></div>
       </div>
 
       <div class="actions">
