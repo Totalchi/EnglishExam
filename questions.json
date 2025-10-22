@@ -4,206 +4,105 @@
       "id": "grammar",
       "title": "Grammar",
       "items": [
-        {
-          "id": "g1",
-          "skill": "Grammar",
-          "level_hint": "A1",
-          "type": "mcq",
-          "prompt": "Complete: My ____ is Anna.",
-          "options": ["brother", "sister", "brothers"],
-          "answer": "sister",
-          "review_tags": ["A1: family vocabulary in subject position", "A1: 'be' + noun"]
-        },
-        {
-          "id": "g2",
-          "skill": "Grammar",
-          "level_hint": "A2",
-          "type": "fill",
-          "prompt": "Use Present Simple (3rd person): She ____ (go) to school every day.",
-          "answer": ["goes"],
-          "review_tags": ["A2: Present Simple 3rd person -s"]
-        },
-        {
-          "id": "g3",
-          "skill": "Grammar",
-          "level_hint": "B1",
-          "type": "mcq",
-          "prompt": "Choose the correct past: I ____ my keys yesterday.",
-          "options": ["lose", "lost", "have lost"],
-          "answer": "lost",
-          "review_tags": ["B1: Past Simple vs Present Perfect"]
-        },
-        {
-          "id": "g4",
-          "skill": "Grammar",
-          "level_hint": "B2",
-          "type": "fill",
-          "prompt": "Rewrite using a passive form: They built the bridge in 2010. → The bridge ____ in 2010.",
-          "answer": ["was built"],
-          "review_tags": ["B2: Passive voice (past simple)"]
-        },
-        {
-          "id": "g5",
-          "skill": "Grammar",
-          "level_hint": "C1",
-          "type": "fill",
-          "prompt": "Use a mixed conditional: If I ____ (study) more, I ____ (have) a better job now.",
-          "answer": [["had studied", "’d studied"], ["would have", "would have had", "’d have"]],
-          "review_tags": ["C1: Mixed conditionals (3rd + 2nd)"]
-        },
-        {
-          "id": "g6",
-          "skill": "Grammar",
-          "level_hint": "C2",
-          "type": "short",
-          "prompt": "Transform using inversion for emphasis: I had never heard such an absurd claim. (Begin with \"Never...\")",
-          "answer_regex": "^never\\s+had\\s+i\\s+heard\\s+such\\s+an\\s+absurd\\s+claim\\.?$",
-          "review_tags": ["C2: Inversion after negative adverbials"]
-        }
+        { "id": "g1", "skill": "Grammar", "level_hint": "A1", "type": "mcq", "prompt": "Complete: My ____ is Anna.", "options": ["brother", "sister", "brothers"], "answer": "sister", "review_tags": ["A1: family vocabulary in subject position","A1: 'be' + noun"] },
+        { "id": "g2", "skill": "Grammar", "level_hint": "A1", "type": "fill", "prompt": "Write the correct form of 'to be': I ____ a student.", "answer": ["am"], "review_tags": ["A1: verb 'be'"] },
+        { "id": "g3", "skill": "Grammar", "level_hint": "A1", "type": "mcq", "prompt": "Choose: We ____ from Italy.", "options": ["is", "are", "am"], "answer": "are", "review_tags": ["A1: verb 'be' + plural"] },
+
+        { "id": "g4", "skill": "Grammar", "level_hint": "A2", "type": "fill", "prompt": "Use Present Simple (3rd person): She ____ (go) to school every day.", "answer": ["goes"], "review_tags": ["A2: Present Simple 3rd person -s"] },
+        { "id": "g5", "skill": "Grammar", "level_hint": "A2", "type": "mcq", "prompt": "Choose the correct question word: ____ old are you?", "options": ["What", "How", "How"], "answer": "How", "review_tags": ["A2: question words"] },
+        { "id": "g6", "skill": "Grammar", "level_hint": "A2", "type": "fill", "prompt": "Past of 'to be': They ____ at home yesterday.", "answer": ["were"], "review_tags": ["A2: Past Simple of 'be'"] },
+
+        { "id": "g7", "skill": "Grammar", "level_hint": "B1", "type": "mcq", "prompt": "Choose the correct past: I ____ my keys yesterday.", "options": ["lose", "lost", "have lost"], "answer": "lost", "review_tags": ["B1: Past Simple vs Present Perfect"] },
+        { "id": "g8", "skill": "Grammar", "level_hint": "B1", "type": "fill", "prompt": "Present Perfect with 'already': I have ____ finished my homework.", "answer": ["already"], "review_tags": ["B1: adverb position (already)"] },
+        { "id": "g9", "skill": "Grammar", "level_hint": "B1", "type": "cloze", "prompt": "Complete (one word each): If it ____ (rain), we ____ (stay) at home.", "blanks": 2, "answers": [["rains"], ["stay"]], "review_tags": ["B1: First conditional"] },
+
+        { "id": "g10", "skill": "Grammar", "level_hint": "B2", "type": "fill", "prompt": "Rewrite using a passive form: They built the bridge in 2010. → The bridge ____ in 2010.", "answer": ["was built"], "review_tags": ["B2: Passive voice (past simple)"] },
+        { "id": "g11", "skill": "Grammar", "level_hint": "B2", "type": "mcq", "prompt": "Choose the correct relative pronoun: The woman ____ lives next door is a doctor.", "options": ["which", "who", "whom"], "answer": "who", "review_tags": ["B2: relative clauses"] },
+        { "id": "g12", "skill": "Grammar", "level_hint": "B2", "type": "fill", "prompt": "Reported speech: “I can’t help you,” she said. → She said she ____ help me.", "answer": ["couldn’t", "could not"], "review_tags": ["B2: backshifting in reported speech"] },
+
+        { "id": "g13", "skill": "Grammar", "level_hint": "C1", "type": "fill", "prompt": "Use a mixed conditional: If I ____ (study) more, I ____ (have) a better job now.", "answer": [["had studied","’d studied"],["would have","would have had","’d have"]], "review_tags": ["C1: Mixed conditionals (3rd + 2nd)"] },
+        { "id": "g14", "skill": "Grammar", "level_hint": "C1", "type": "short", "prompt": "Add an appropriate linker of contrast: ____ the risks, the committee proceeded.", "answer": ["Despite", "In spite of"], "review_tags": ["C1: advanced linkers"] },
+        { "id": "g15", "skill": "Grammar", "level_hint": "C1", "type": "mcq", "prompt": "Choose: Hardly ____ we arrived when the meeting started.", "options": ["had", "have", "has"], "answer": "had", "review_tags": ["C1: inversion after 'Hardly'"] },
+
+        { "id": "g16", "skill": "Grammar", "level_hint": "C2", "type": "short", "prompt": "Transform using inversion for emphasis: I had never heard such an absurd claim. (Begin with \"Never...\")", "answer_regex": "^never\\s+had\\s+i\\s+heard\\s+such\\s+an\\s+absurd\\s+claim\\.?$", "review_tags": ["C2: Inversion after negative adverbials"] },
+        { "id": "g17", "skill": "Grammar", "level_hint": "C2", "type": "fill", "prompt": "Use a cleft sentence: 'Marketing overlooked the data.' → It ____ the data that marketing overlooked.", "answer": ["was"], "review_tags": ["C2: clefting for focus"] },
+        { "id": "g18", "skill": "Grammar", "level_hint": "C2", "type": "short", "prompt": "Nominalisation: Rewrite briefly using a noun form of 'decide' (keep meaning): 'They decided to postpone the launch.'", "answer": ["Their decision was to postpone the launch", "Their decision to postpone the launch", "A decision to postpone the launch was made"], "review_tags": ["C2: nominalisation & concision"] }
       ]
     },
+
     {
       "id": "vocab",
       "title": "Vocabulary",
       "items": [
-        {
-          "id": "v1",
-          "skill": "Vocabulary",
-          "level_hint": "A1",
-          "type": "fill",
-          "prompt": "Choose the best word (type it): It is very ____ today. (hot / warm / cold)",
-          "answer": ["hot", "warm", "cold"],
-          "review_tags": ["A1: basic adjectives of weather"]
-        },
-        {
-          "id": "v2",
-          "skill": "Vocabulary",
-          "level_hint": "B1",
-          "type": "mcq",
-          "prompt": "Pick the closest meaning of 'reliable'.",
-          "options": ["funny", "trustworthy", "expensive"],
-          "answer": "trustworthy",
-          "review_tags": ["B1: adjectives of character"]
-        },
-        {
-          "id": "v3",
-          "skill": "Vocabulary",
-          "level_hint": "C1",
-          "type": "short",
-          "prompt": "Give a near-synonym for 'mitigate' (one word).",
-          "answer": ["alleviate", "ease", "reduce", "lessen", "diminish", "soften", "moderate", "palliate", "ameliorate"],
-          "review_tags": ["C1: academic verbs / nuance"]
-        }
+        { "id": "v1", "skill": "Vocabulary", "level_hint": "A1", "type": "fill", "prompt": "Type one suitable word: It is very ____ today. (hot / warm / cold)", "answer": ["hot","warm","cold"], "review_tags": ["A1: basic adjectives of weather"] },
+        { "id": "v2", "skill": "Vocabulary", "level_hint": "A2", "type": "mcq", "prompt": "Choose the best option: I usually ____ the bus to work.", "options": ["take", "do", "make"], "answer": "take", "review_tags": ["A2: verb–noun collocations"] },
+        { "id": "v3", "skill": "Vocabulary", "level_hint": "A2", "type": "short", "prompt": "Give one opposite of 'cheap'.", "answer": ["expensive", "costly", "pricey"], "review_tags": ["A2: antonyms"] },
+
+        { "id": "v4", "skill": "Vocabulary", "level_hint": "B1", "type": "mcq", "prompt": "Pick the closest meaning of 'reliable'.", "options": ["funny","trustworthy","expensive"], "answer": "trustworthy", "review_tags": ["B1: adjectives of character"] },
+        { "id": "v5", "skill": "Vocabulary", "level_hint": "B1", "type": "short", "prompt": "Complete with one word: She has a strong ____ for languages.", "answer": ["talent", "aptitude"], "review_tags": ["B1: abstract nouns"] },
+        { "id": "v6", "skill": "Vocabulary", "level_hint": "B1", "type": "fill", "prompt": "Phrasal verb (type it): Please ____ (fill/complete) this form.", "answer": ["fill in", "fill out"], "review_tags": ["B1: phrasal verbs"] },
+
+        { "id": "v7", "skill": "Vocabulary", "level_hint": "C1", "type": "short", "prompt": "Give a near-synonym for 'mitigate' (one word).", "answer": ["alleviate","ease","reduce","lessen","diminish","soften","moderate","palliate","ameliorate"], "review_tags": ["C1: academic verbs / nuance"] },
+        { "id": "v8", "skill": "Vocabulary", "level_hint": "C1", "type": "short", "prompt": "One precise adjective meaning 'very careful and exact'.", "answer": ["meticulous", "scrupulous", "precise"], "review_tags": ["C1: precision adjectives"] },
+        { "id": "v9", "skill": "Vocabulary", "level_hint": "C2", "type": "short", "prompt": "A sophisticated synonym for 'widespread' used in academic writing.", "answer": ["prevalent"], "review_tags": ["C2: high-register word choice"] }
       ]
     },
+
     {
       "id": "use",
       "title": "Use of English",
       "items": [
-        {
-          "id": "u1",
-          "skill": "Use of English",
-          "level_hint": "B1",
-          "type": "cloze",
-          "prompt": "Complete (one word each): I’m looking ___ a new job because I’m fed ___ with my boss.",
-          "blanks": 2,
-          "answers": [["for"], ["up"]],
-          "review_tags": ["B1: dependent prepositions", "B1: fixed expressions"]
-        },
-        {
-          "id": "u2",
-          "skill": "Use of English",
-          "level_hint": "B2",
-          "type": "short",
-          "prompt": "Word formation: We must improve our energy ______ (efficient) at home.",
-          "answer": ["efficiency"],
-          "review_tags": ["B2: word formation (suffixes)"]
-        },
-        {
-          "id": "u3",
-          "skill": "Use of English",
-          "level_hint": "C1",
-          "type": "short",
-          "prompt": "Collocation: Provide a strong collocate for 'commit' (e.g., commit ____).",
-          "answer": ["a crime", "suicide", "to memory", "to paper", "an offence", "resources"],
-          "review_tags": ["C1: collocations"]
-        }
+        { "id": "u1", "skill": "Use of English", "level_hint": "A2", "type": "cloze", "prompt": "Complete (one word each): I'm interested ____ history and good ____ maths.", "blanks": 2, "answers": [["in"],["at","at maths","at math"]], "review_tags": ["A2: dependent prepositions"] },
+        { "id": "u2", "skill": "Use of English", "level_hint": "B1", "type": "cloze", "prompt": "Complete (one word each): I’m looking ___ a new job because I’m fed ___ with my boss.", "blanks": 2, "answers": [["for"],["up"]], "review_tags": ["B1: dependent prepositions","B1: fixed expressions"] },
+        { "id": "u3", "skill": "Use of English", "level_hint": "B1", "type": "short", "prompt": "Choose the correct form (type it): 'There are too ____ people in the room.' (much/many)", "answer": ["many"], "review_tags": ["B1: countable vs uncountable"] },
+
+        { "id": "u4", "skill": "Use of English", "level_hint": "B2", "type": "short", "prompt": "Word formation: We must improve our energy ______ (efficient) at home.", "answer": ["efficiency"], "review_tags": ["B2: word formation (suffixes)"] },
+        { "id": "u5", "skill": "Use of English", "level_hint": "B2", "type": "short", "prompt": "Transform with a suitable linker: 'He studied hard. He failed the test.' Use one word between them.", "answer": ["however", "nevertheless"], "review_tags": ["B2: contrast linkers"] },
+        { "id": "u6", "skill": "Use of English", "level_hint": "B2", "type": "short", "prompt": "Collocation: Provide a strong collocate for 'heavy' (e.g., heavy ____).", "answer": ["traffic", "rain", "smoker", "industry", "heart"], "review_tags": ["B2: collocations"] },
+
+        { "id": "u7", "skill": "Use of English", "level_hint": "C1", "type": "short", "prompt": "Paraphrase with one word only: 'make something less severe' → ______", "answer": ["mitigate", "alleviate", "ease"], "review_tags": ["C1: paraphrase precision"] },
+        { "id": "u8", "skill": "Use of English", "level_hint": "C1", "type": "short", "prompt": "Fixed expression: Complete 'by and ____' (meaning 'generally').", "answer": ["large"], "review_tags": ["C1: fixed expressions"] },
+        { "id": "u9", "skill": "Use of English", "level_hint": "C1", "type": "short", "prompt": "Provide a strong collocate for 'commit' (e.g., commit ____).", "answer": ["a crime","suicide","to memory","to paper","an offence","resources"], "review_tags": ["C1: collocations"] }
       ]
     },
+
     {
       "id": "listening",
       "title": "Listening (TTS)",
       "items": [
-        {
-          "id": "l1",
-          "skill": "Listening",
-          "level_hint": "A2",
-          "type": "listening_tts",
-          "tts_text": "Hi! The museum opens at nine and closes at six. What time does it open?",
-          "prompt": "Listen and answer (number only): What time does the museum open?",
-          "answer": ["9", "nine", "9:00", "09:00"],
-          "review_tags": ["A2: specific information (times)"]
-        },
-        {
-          "id": "l2",
-          "skill": "Listening",
-          "level_hint": "B2",
-          "type": "listening_tts",
-          "tts_text": "Due to engineering works, all southbound trains will be delayed by approximately twenty minutes. Passengers for Brighton should use platform four.",
-          "prompt": "Listen and answer briefly: How long are trains delayed?",
-          "answer": ["20", "twenty", "20 minutes", "twenty minutes"],
-          "review_tags": ["B2: announcements — extracting key detail"]
-        }
+        { "id": "l1", "skill": "Listening", "level_hint": "A2", "type": "listening_tts", "tts_text": "Hi! The museum opens at nine and closes at six. What time does it open?", "prompt": "Listen and answer (number only): What time does the museum open?", "answer": ["9","nine","9:00","09:00"], "review_tags": ["A2: specific information (times)"] },
+        { "id": "l2", "skill": "Listening", "level_hint": "A2", "type": "listening_tts", "tts_text": "Your order will arrive on Tuesday morning. Please make sure someone is home to sign for it.", "prompt": "What day will the order arrive?", "answer": ["tuesday"], "review_tags": ["A2: days of the week"] },
+
+        { "id": "l3", "skill": "Listening", "level_hint": "B1", "type": "listening_tts", "tts_text": "Good afternoon. The gym is open from 7 a.m. to 10 p.m. on weekdays, and from 8 a.m. to 8 p.m. at weekends.", "prompt": "Until what time is the gym open on weekdays? (number only)", "answer": ["22","10 pm","10 p.m.","22:00"], "review_tags": ["B1: extracting schedule info"] },
+        { "id": "l4", "skill": "Listening", "level_hint": "B2", "type": "listening_tts", "tts_text": "Due to engineering works, all southbound trains will be delayed by approximately twenty minutes. Passengers for Brighton should use platform four.", "prompt": "How long are trains delayed?", "answer": ["20","twenty","20 minutes","twenty minutes"], "review_tags": ["B2: announcements — key detail"] },
+
+        { "id": "l5", "skill": "Listening", "level_hint": "C1", "type": "listening_tts", "tts_text": "While the pilot study suggests a positive trend, the sample size was too small to draw firm conclusions.", "prompt": "Why can't firm conclusions be drawn? (short phrase)", "answer": ["sample size too small","too small sample size","small sample size"], "review_tags": ["C1: inference from academic tone"] },
+        { "id": "l6", "skill": "Listening", "level_hint": "C1", "type": "listening_tts", "tts_text": "Please note that the keynote has been brought forward to nine-thirty, so arrive fifteen minutes earlier to register.", "prompt": "What time is the keynote now?", "answer": ["9:30","09:30","nine thirty","9.30"], "review_tags": ["C1: time expressions & 'brought forward'"] }
       ]
     },
+
     {
       "id": "reading",
       "title": "Reading",
       "items": [
-        {
-          "id": "r1",
-          "skill": "Reading",
-          "level_hint": "B1",
-          "type": "reading_mcq",
-          "passage": "Many people assume that working from home automatically increases productivity. However, research shows mixed results: while some enjoy fewer distractions, others struggle to separate work and personal life, leading to burnout.",
-          "question": "What is the main idea?",
-          "options": [
-            "Working from home always increases productivity.",
-            "The impact of working from home on productivity is not the same for everyone.",
-            "Working from home causes burnout for everyone."
-          ],
-          "answer": "The impact of working from home on productivity is not the same for everyone.",
-          "review_tags": ["B1: identify main idea"]
-        },
-        {
-          "id": "r2",
-          "skill": "Reading",
-          "level_hint": "C1",
-          "type": "reading_short",
-          "passage": "Although the policy promised to streamline reporting, the additional compliance checks inadvertently prolonged approval times.",
-          "question": "In one short phrase, what was the unintended consequence?",
-          "answer": ["prolonged approval times", "longer approval times", "approvals took longer", "increased approval time"],
-          "review_tags": ["C1: cause–effect inference"]
-        }
+        { "id": "r1", "skill": "Reading", "level_hint": "B1", "type": "reading_mcq", "passage": "Many people assume that working from home automatically increases productivity. However, research shows mixed results: while some enjoy fewer distractions, others struggle to separate work and personal life, leading to burnout.", "question": "What is the main idea?", "options": ["Working from home always increases productivity.","The impact of working from home on productivity is not the same for everyone.","Working from home causes burnout for everyone."], "answer": "The impact of working from home on productivity is not the same for everyone.", "review_tags": ["B1: identify main idea"] },
+        { "id": "r2", "skill": "Reading", "level_hint": "B1", "type": "reading_short", "passage": "Tickets can be refunded only within seven days of purchase and must be accompanied by a receipt.", "question": "State one condition for a refund (short).", "answer": ["within seven days","7 days","seven days","receipt"], "review_tags": ["B1: locating specific information"] },
+
+        { "id": "r3", "skill": "Reading", "level_hint": "B2", "type": "reading_mcq", "passage": "Although the team missed its quarterly targets, the new onboarding program significantly reduced staff turnover.", "question": "Which statement is supported?", "options": ["Targets were met but turnover increased.","Targets were missed but turnover fell.","Both targets and turnover improved."], "answer": "Targets were missed but turnover fell.", "review_tags": ["B2: contrasting information"] },
+        { "id": "r4", "skill": "Reading", "level_hint": "C1", "type": "reading_short", "passage": "Although the policy promised to streamline reporting, the additional compliance checks inadvertently prolonged approval times.", "question": "In one short phrase, what was the unintended consequence?", "answer": ["prolonged approval times","longer approval times","approvals took longer","increased approval time"], "review_tags": ["C1: cause–effect inference"] },
+
+        { "id": "r5", "skill": "Reading", "level_hint": "C1", "type": "reading_mcq", "passage": "The author contends that universal basic income could bolster entrepreneurship, yet warns that without price controls it may fuel inflation.", "question": "What is the author's stance?", "options": ["Entirely supportive of universal basic income.","Entirely against universal basic income.","Supportive but concerned about inflation without safeguards."], "answer": "Supportive but concerned about inflation without safeguards.", "review_tags": ["C1: nuanced stance recognition"] },
+        { "id": "r6", "skill": "Reading", "level_hint": "C2", "type": "reading_short", "passage": "Far from being merely decorative, the footnotes constitute a parallel argument that destabilises the apparent certainty of the main text.", "question": "In one precise phrase, what role do the footnotes play?", "answer": ["a parallel argument", "parallel argument", "they destabilise the main text", "undermine certainty"], "review_tags": ["C2: meta-argument & discourse analysis"] }
       ]
     },
+
     {
       "id": "writing",
       "title": "Writing",
       "items": [
-        {
-          "id": "w1",
-          "skill": "Writing",
-          "level_hint": "B1–C2",
-          "type": "writing",
-          "prompt": "Write 120–180 words: Describe a time when you had to learn something quickly. Explain what strategies you used and what you would do differently now.",
-          "review_tags": [
-            "B1: paragraphing and basic coherence",
-            "B2: range of tenses & linking devices",
-            "C1: register control and cohesion",
-            "C2: precision and nuance in argumentation"
-          ]
-        }
+        { "id": "w1", "skill": "Writing", "level_hint": "B1–C2", "type": "writing", "prompt": "Write 120–180 words: Describe a time when you had to learn something quickly. Explain what strategies you used and what you would do differently now.", "review_tags": ["B1: paragraphing and basic coherence","B2: range of tenses & linking devices","C1: register control and cohesion","C2: precision and nuance in argumentation"] },
+        { "id": "w2", "skill": "Writing", "level_hint": "B2–C2", "type": "writing", "prompt": "Write 140–190 words: Do you agree that remote work should remain the default option for office jobs? Present a balanced argument and a clear conclusion.", "review_tags": ["B2: argument structure","C1: hedging and stance","C2: precision in claims"] },
+        { "id": "w3", "skill": "Writing", "level_hint": "C1–C2", "type": "writing", "prompt": "Write 160–210 words: Summarise the key risks and benefits of implementing AI in public services, proposing two practical safeguards.", "review_tags": ["C1: summary & synthesis","C2: proposals with justification"] }
       ]
     }
   ]
