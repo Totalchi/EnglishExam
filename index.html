@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>English Test (A1–C2)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Chart.js for bar charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <!-- jsPDF + html2canvas for PDF export -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js" defer></script>
+
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="container">
+    <h1>English Test (A1–C2)</h1>
+    <p class="subtitle">Grammar · Vocabulary · Use of English · Listening · Reading · Writing</p>
+  </header>
+
+  <main class="container">
+    <!-- Intro / candidate data -->
+    <section id="intro" class="card">
+      <h2>Candidate</h2>
+      <div class="grid">
+        <label>
+          Full Name
+          <input id="candidateName" type="text" placeholder="Write your name" autocomplete="off" required />
+        </label>
+        <label>
+          Email (optional)
+          <input id="candidateEmail" type="email" placeholder="example@mail.com" autocomplete="off" />
+        </label>
+      </div>
+      <button id="startBtn" class="btn primary">Start Test</button>
+      <p class="muted">No timer. You can navigate between sections. For open answers, type your response (no suggestions provided).</p>
+    </section>
+
+    <!-- Test area -->
+    <section id="testArea" class="hidden">
+      <nav id="sectionTabs" class="tabs"></nav>
+      <div id="sectionContent"></div>
+
+      <div class="actions">
+        <button id="prevSection" class="btn">◀ Prev</button>
+        <button id="nextSection" class="btn">Next ▶</button>
+        <button id="finishBtn" class="btn success">Finish Attempt</button>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="resultsArea" class="hidden">
+      <h2>Results</h2>
+      <div id="resultsSummary" class="card"></div>
+
+      <div class="card">
+        <h3>Skill Profile</h3>
+        <canvas id="skillsChart" height="220"></canvas>
+      </div>
+
+      <div class="card">
+        <h3>Precise Ripasso (Personalised Review)</h3>
+        <div id="ripassoList"></div>
+      </div>
+
+      <div class="actions">
+        <button id="downloadPdf" class="btn primary">Download Results (PDF)</button>
+        <button id="restartBtn" class="btn">Restart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container muted">
+    <small>© 2025 — Interactive CEFR Placement • Client-side only.</small>
+  </footer>
+</body>
+</html>

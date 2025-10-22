@@ -1,0 +1,210 @@
+{
+  "sections": [
+    {
+      "id": "grammar",
+      "title": "Grammar",
+      "items": [
+        {
+          "id": "g1",
+          "skill": "Grammar",
+          "level_hint": "A1",
+          "type": "mcq",
+          "prompt": "Complete: My ____ is Anna.",
+          "options": ["brother", "sister", "brothers"],
+          "answer": "sister",
+          "review_tags": ["A1: family vocabulary in subject position", "A1: 'be' + noun"]
+        },
+        {
+          "id": "g2",
+          "skill": "Grammar",
+          "level_hint": "A2",
+          "type": "fill",
+          "prompt": "Use Present Simple (3rd person): She ____ (go) to school every day.",
+          "answer": ["goes"],
+          "review_tags": ["A2: Present Simple 3rd person -s"]
+        },
+        {
+          "id": "g3",
+          "skill": "Grammar",
+          "level_hint": "B1",
+          "type": "mcq",
+          "prompt": "Choose the correct past: I ____ my keys yesterday.",
+          "options": ["lose", "lost", "have lost"],
+          "answer": "lost",
+          "review_tags": ["B1: Past Simple vs Present Perfect"]
+        },
+        {
+          "id": "g4",
+          "skill": "Grammar",
+          "level_hint": "B2",
+          "type": "fill",
+          "prompt": "Rewrite using a passive form: They built the bridge in 2010. → The bridge ____ in 2010.",
+          "answer": ["was built"],
+          "review_tags": ["B2: Passive voice (past simple)"]
+        },
+        {
+          "id": "g5",
+          "skill": "Grammar",
+          "level_hint": "C1",
+          "type": "fill",
+          "prompt": "Use a mixed conditional: If I ____ (study) more, I ____ (have) a better job now.",
+          "answer": [["had studied", "’d studied"], ["would have", "would have had", "’d have"]],
+          "review_tags": ["C1: Mixed conditionals (3rd + 2nd)"]
+        },
+        {
+          "id": "g6",
+          "skill": "Grammar",
+          "level_hint": "C2",
+          "type": "short",
+          "prompt": "Transform using inversion for emphasis: I had never heard such an absurd claim. (Begin with \"Never...\")",
+          "answer_regex": "^never\\s+had\\s+i\\s+heard\\s+such\\s+an\\s+absurd\\s+claim\\.?$",
+          "review_tags": ["C2: Inversion after negative adverbials"]
+        }
+      ]
+    },
+    {
+      "id": "vocab",
+      "title": "Vocabulary",
+      "items": [
+        {
+          "id": "v1",
+          "skill": "Vocabulary",
+          "level_hint": "A1",
+          "type": "fill",
+          "prompt": "Choose the best word (type it): It is very ____ today. (hot / warm / cold)",
+          "answer": ["hot", "warm", "cold"],
+          "review_tags": ["A1: basic adjectives of weather"]
+        },
+        {
+          "id": "v2",
+          "skill": "Vocabulary",
+          "level_hint": "B1",
+          "type": "mcq",
+          "prompt": "Pick the closest meaning of 'reliable'.",
+          "options": ["funny", "trustworthy", "expensive"],
+          "answer": "trustworthy",
+          "review_tags": ["B1: adjectives of character"]
+        },
+        {
+          "id": "v3",
+          "skill": "Vocabulary",
+          "level_hint": "C1",
+          "type": "short",
+          "prompt": "Give a near-synonym for 'mitigate' (one word).",
+          "answer": ["alleviate", "ease", "reduce", "lessen", "diminish", "soften", "moderate", "palliate", "ameliorate"],
+          "review_tags": ["C1: academic verbs / nuance"]
+        }
+      ]
+    },
+    {
+      "id": "use",
+      "title": "Use of English",
+      "items": [
+        {
+          "id": "u1",
+          "skill": "Use of English",
+          "level_hint": "B1",
+          "type": "cloze",
+          "prompt": "Complete (one word each): I’m looking ___ a new job because I’m fed ___ with my boss.",
+          "blanks": 2,
+          "answers": [["for"], ["up"]],
+          "review_tags": ["B1: dependent prepositions", "B1: fixed expressions"]
+        },
+        {
+          "id": "u2",
+          "skill": "Use of English",
+          "level_hint": "B2",
+          "type": "short",
+          "prompt": "Word formation: We must improve our energy ______ (efficient) at home.",
+          "answer": ["efficiency"],
+          "review_tags": ["B2: word formation (suffixes)"]
+        },
+        {
+          "id": "u3",
+          "skill": "Use of English",
+          "level_hint": "C1",
+          "type": "short",
+          "prompt": "Collocation: Provide a strong collocate for 'commit' (e.g., commit ____).",
+          "answer": ["a crime", "suicide", "to memory", "to paper", "an offence", "resources"],
+          "review_tags": ["C1: collocations"]
+        }
+      ]
+    },
+    {
+      "id": "listening",
+      "title": "Listening (TTS)",
+      "items": [
+        {
+          "id": "l1",
+          "skill": "Listening",
+          "level_hint": "A2",
+          "type": "listening_tts",
+          "tts_text": "Hi! The museum opens at nine and closes at six. What time does it open?",
+          "prompt": "Listen and answer (number only): What time does the museum open?",
+          "answer": ["9", "nine", "9:00", "09:00"],
+          "review_tags": ["A2: specific information (times)"]
+        },
+        {
+          "id": "l2",
+          "skill": "Listening",
+          "level_hint": "B2",
+          "type": "listening_tts",
+          "tts_text": "Due to engineering works, all southbound trains will be delayed by approximately twenty minutes. Passengers for Brighton should use platform four.",
+          "prompt": "Listen and answer briefly: How long are trains delayed?",
+          "answer": ["20", "twenty", "20 minutes", "twenty minutes"],
+          "review_tags": ["B2: announcements — extracting key detail"]
+        }
+      ]
+    },
+    {
+      "id": "reading",
+      "title": "Reading",
+      "items": [
+        {
+          "id": "r1",
+          "skill": "Reading",
+          "level_hint": "B1",
+          "type": "reading_mcq",
+          "passage": "Many people assume that working from home automatically increases productivity. However, research shows mixed results: while some enjoy fewer distractions, others struggle to separate work and personal life, leading to burnout.",
+          "question": "What is the main idea?",
+          "options": [
+            "Working from home always increases productivity.",
+            "The impact of working from home on productivity is not the same for everyone.",
+            "Working from home causes burnout for everyone."
+          ],
+          "answer": "The impact of working from home on productivity is not the same for everyone.",
+          "review_tags": ["B1: identify main idea"]
+        },
+        {
+          "id": "r2",
+          "skill": "Reading",
+          "level_hint": "C1",
+          "type": "reading_short",
+          "passage": "Although the policy promised to streamline reporting, the additional compliance checks inadvertently prolonged approval times.",
+          "question": "In one short phrase, what was the unintended consequence?",
+          "answer": ["prolonged approval times", "longer approval times", "approvals took longer", "increased approval time"],
+          "review_tags": ["C1: cause–effect inference"]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "title": "Writing",
+      "items": [
+        {
+          "id": "w1",
+          "skill": "Writing",
+          "level_hint": "B1–C2",
+          "type": "writing",
+          "prompt": "Write 120–180 words: Describe a time when you had to learn something quickly. Explain what strategies you used and what you would do differently now.",
+          "review_tags": [
+            "B1: paragraphing and basic coherence",
+            "B2: range of tenses & linking devices",
+            "C1: register control and cohesion",
+            "C2: precision and nuance in argumentation"
+          ]
+        }
+      ]
+    }
+  ]
+}
